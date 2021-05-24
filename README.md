@@ -23,7 +23,7 @@ CreatE Topic
 Endpoint : /api/topics
 HTTP Verb: `POST`
 {
-	"title":"Go duck duck"
+	"title":"topic1"
 }
 ```
 
@@ -31,10 +31,16 @@ HTTP Verb: `POST`
 Subsribe to topic
 Endpoint : /api/subscribe/{reference}
 HTTP Verb: `POST`
+{
+	"url":"http://example-url.com/callback"
+}
 ```
 
 ```sh
 Publish to topic
 Endpoint : /api/publish/{reference}
 HTTP Verb: `POST`
+{
+	"message":"hello"
+}
 ```
