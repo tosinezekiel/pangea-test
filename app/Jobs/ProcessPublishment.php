@@ -54,7 +54,7 @@ class ProcessPublishment implements ShouldQueue
                 "status" => Status::COMPLETED,
                 "attempt" => 0
             ]);
-        }catch(Exception $e){
+        }catch(\Exception $e){
             \Log::info($e->getMessage());
         }
     }
